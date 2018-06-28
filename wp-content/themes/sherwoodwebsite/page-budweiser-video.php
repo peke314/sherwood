@@ -106,7 +106,7 @@
         if (mq.matches) {
           // window width is at least 500px
           function toggleMute() {
-            var video=document.getElementById("bgvid")
+            var video=document.getElementById("bgvid-bud")
             if(video.muted){
             video.muted = false;
             document.getElementById("icon--muted").style.display = "none";
@@ -120,7 +120,7 @@
         } else {
           // window width is less than 500px
           function toggleMute() {
-            var video2=document.getElementById("bgvid-sm")
+            var video2=document.getElementById("bgvid-bud-sm")
             if(video.muted){
             video2.muted = false;
             document.getElementById("icon--muted").style.display = "none";
