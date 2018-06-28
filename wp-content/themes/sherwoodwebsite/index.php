@@ -107,11 +107,15 @@ if ( !defined( 'ABSPATH' ) ) {
           <img id="icon--unmuted" src="<?php bloginfo('template_directory');?>/png/unmuted.png" alt="">
         </div>
         <script type="text/javascript">
-        var mq = window.matchMedia( "(min-width: 1025px)" );
-        if (mq.matches) {
-          // window width is at least 500px
-          function toggleMute() {
+          var mq = window.matchMedia( '(min-width: 1025px)');
+          if (mq.matches == true) {
+            // window width is at least 500px
             var video=document.getElementById("bgvid")
+          } else {
+            // window width is less than 500px
+              var video=document.getElementById("bgvid-sm")
+          }
+          function toggleMute() {
             if(video.muted){
             video.muted = false;
             document.getElementById("icon--muted").style.display = "none";
@@ -122,22 +126,6 @@ if ( !defined( 'ABSPATH' ) ) {
             document.getElementById("icon--unmuted").style.display = "none";
             }
           }
-        } else {
-          // window width is less than 500px
-          function toggleMute() {
-            var video2=document.getElementById("bgvid-sm")
-            if(video2.muted){
-            video2.muted = false;
-            document.getElementById("icon--muted").style.display = "none";
-            document.getElementById("icon--unmuted").style.display = "block";
-            } else {
-            video2.muted = true;
-            document.getElementById("icon--muted").style.display = "block";
-            document.getElementById("icon--unmuted").style.display = "none";
-            }
-          }
-        }
-
         </script>
       </div>
     </section>
@@ -814,10 +802,10 @@ if ( !defined( 'ABSPATH' ) ) {
             //     $caption.text(flkty.selectedElement.title);
             // });
 
-            var flkty = $galleryH.data('flickity');
-            $galleryH.on('cellSelect', function () {
-                $captionH.text(flkty.selectedElement.title);
-            });
+            // var flkty = $galleryH.data('flickity');
+            // $galleryH.on('cellSelect', function () {
+            //     $captionH.text(flkty.selectedElement.title);
+            // });
         //# sourceURL=pen.js
     </script>
       <script src="<?php bloginfo('template_directory');?>/js/Ai2CanvasAnimation.js"></script>
