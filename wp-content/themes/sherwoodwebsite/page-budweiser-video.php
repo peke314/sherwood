@@ -121,7 +121,7 @@
           // window width is less than 500px
           function toggleMute() {
             var video2=document.getElementById("bgvid-bud-sm")
-            if(video.muted){
+            if(video2.muted){
             video2.muted = false;
             document.getElementById("icon--muted").style.display = "none";
             document.getElementById("icon--unmuted").style.display = "block";
