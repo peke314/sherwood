@@ -756,7 +756,7 @@ if ( !defined( 'ABSPATH' ) ) {
             // $gallery.on('cellSelect', function () {
             //     $caption.text(flkty.selectedElement.title);
             // });
-            
+
             var flkty = $galleryH.data('flickity');
             $galleryH.on('cellSelect', function () {
                 $captionH.text(flkty.selectedElement.title);
@@ -779,6 +779,7 @@ function map1path(){this.points=[[[-1246.9,444],[-317.6,444],[611.7,444],[1569.2
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-75840168-1', 'auto');
+    ga('set', 'anonymizeIp', true);
     ga('send', 'pageview');
 
   </script>
