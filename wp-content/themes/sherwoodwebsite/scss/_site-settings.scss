@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+// ----------------------
+// == Site settings
+// ----------------------
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800,700,400,300);
+
+// Fonts
+$font1: "Open Sans", Helvetica, Arial, sans-serif;
+
+// = Colors
+// -----------------------------
+
+// Graphic chart
+$header: rgba(0,0,0,1);
+$hover: #8A8A8A;
+$bcont: rgb(31, 30, 30);
+
+$text: rgba(255,255,255,1);
+
+$green: rgba(0,207,111,1);
+$blue: rgba(4,130,200,1);
+$purple: rgba(192,72,187,1);
+$orange: rgba(251,160,17,1);
+
+
+
+// = Grid
+// -----------------------------
+
+// Max width wrapper
+$wrapper-width: pxtoem(1140, 16);
+
+
+
+// = Mobile Icon
+// -----------------------------
+
+
+.si-icons span {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.si-icons-hover span {
+	width: 128px;
+	height: 128px;
+	margin: 50px 40px;
+}
+
+.no-svg .si-icon-hamburger, .no-svg .si-icon-hamburger-cross { background-image: url('../png/hamburger.png') }
+

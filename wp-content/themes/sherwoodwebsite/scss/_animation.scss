@@ -1,0 +1,166 @@
+/* TEXT */
+
+.animation_element, .animation_element_slow  {
+  opacity: 0;
+}
+
+.animation_element.appear, .animation_element_slow.appear {
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+}
+
+
+.animation_element.appear.in_view, .animation_element_slow.appear.in_view {
+  opacity: 1;
+}
+
+.animation_element.slide_up {
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(0px, 30px, 0px);
+  -webkit-transform: translate3d(0px, 30px, 0px);
+  -o-transform: translate(0px, 30px);
+  -ms-transform: translate(0px, 30px);
+  transform: translate3d(0px, 30px, 0px);
+}
+
+.animation_element.slide_up_slow {
+  -moz-transition: all 2s linear;
+  -webkit-transition: all 2s linear;
+  -o-transition: all 2s linear;
+  transition: all 2s linear;
+  -moz-transform: translate3d(0px, 350px, 0px);
+  -webkit-transform: translate3d(0px, 350px, 0px);
+  -o-transform: translate(0px, 350px);
+  -ms-transform: translate(0px, 350px);
+  transform: translate3d(0px, 350px, 0px);
+}
+
+.animation_element.slide_up_slow_ora_container .slide_up_slow_ora {
+  -moz-transition: all 2s linear;
+  -webkit-transition: all 2s linear;
+  -o-transition: all 2s linear;
+  transition: all 2s linear;
+  -moz-transform: translate3d(0px, 600px, 0px);
+  -webkit-transform: translate3d(0px, 600px, 0px);
+  -o-transform: translate(0px, 600px);
+  -ms-transform: translate(0px, 600px);
+  transform: translate3d(0px, 600px, 0px);
+}
+
+
+.animation_element.slide_up.in_view, .animation_element.slide_up_slow.in_view, .animation_element.slide_up_slow_ora_container.in_view .slide_up_slow_ora {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+
+.animation_element.slideleft {
+  -moz-transition: all 1000ms linear;
+  -webkit-transition: all 1000ms linear;
+  -o-transition: all 1000ms linear;
+  transition: all 1000ms linear;
+  -moz-transform: translate3d(30px, 0px, 0px);
+  -webkit-transform: translate3d(30px, 0px, 0px);
+  -o-transform: translate(30px, 0px);
+  -ms-transform: translate(30px, 0px);
+  transform: translate3d(30px, 0px, 0px);
+}
+
+
+.animation_element.slideleft.in_view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.animation_element.slideright {
+  -moz-transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
+  -moz-transform: translate3d(-30px, 0px, 0px);
+  -webkit-transform: translate3d(-30px, 0px, 0px);
+  -o-transform: translate(-30px, 0px);
+  -ms-transform: translate(-30px, 0px);
+  transform: translate3d(-30px, 0px, 0px);
+}
+
+
+.animation_element.slideright.in_view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.animation_element.mask {
+  opacity: 1;
+  -moz-transition: all 1500ms linear;
+  -webkit-transition: all 1500ms linear;
+  -o-transition: all 1500ms linear;
+  transition: all 1500ms linear;
+  -moz-transform: translate3d(20%, 0px, 0px);
+  -webkit-transform: translate3d(20%, 0px, 0px);
+  -o-transform: translate(20%, 0px);
+  -ms-transform: translate(20%, 0px);
+  transform: translate3d(20%, 0px, 0px);
+
+}
+
+.animation_element.mask.in_view {
+  opacity: 1;
+  -moz-transform: translate3d(100%, 0px, 0px);
+  -webkit-transform: translate3d(100%, 0px, 0px);
+  -o-transform: translate(100%, 0px);
+  -ms-transform: translate(100%, 0px);
+  transform: translate3d(100%, 0px, 0px);
+}
+
+.animation_element.scalein {
+  -moz-transition: all 1500ms linear;
+  -webkit-transition: all 1500ms linear;
+  -o-transition: all 1500ms linear;
+  transition: all 1500ms linear;
+  -ms-transform: scale(0,0); /* IE 9 */
+  -webkit-transform: scale(0,0); /* Safari */
+  transform: scale(0,0);
+
+}
+
+.animation_element.scalein_how {
+	-moz-transition: all 500ms linear;
+	-webkit-transition: all 500ms linear;
+	-o-transition: all 500ms linear;
+	transition: all 500ms linear;
+	-ms-transform: scale(0,0); /* IE 9 */
+	-webkit-transform: scale(0,0); /* Safari */
+	transform: scale(0,0);
+  transform-origin: center;
+}
+
+.animation_element.scalein.in_view, .animation_element.scalein_how.in_view {
+  opacity: 1;
+	-ms-transform: scale(1,1); /* IE 9 */
+	-webkit-transform: scale(1,1); /* Safari */
+	transform: scale(1,1);
+}
+
+
+
+
+
+

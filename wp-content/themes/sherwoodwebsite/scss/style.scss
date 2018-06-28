@@ -1,0 +1,19 @@
+/*
+Theme Name: sherwoodwebsite
+
+/* Site settings */
+@import "site-settings";
+
+
+/* Base */
+@import "base";
+@import "animation";
+
+/* Layouts */
+@import "layout/constrained";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/video";
+@import "layout/about";
+@import "layout/gallery";
+@import "layout/facts";

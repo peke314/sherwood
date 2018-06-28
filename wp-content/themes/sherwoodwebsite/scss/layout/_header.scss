@@ -1,0 +1,154 @@
+/* ==|====================
+   Layout/Header
+   ======================= */
+
+
+
+.logo {
+	float: left;
+	a {
+		img {
+			padding: 2px;
+    		max-width: 80%;
+		}
+	}
+}
+
+.nav {
+	.nav_button {
+		height: 30px;
+		width: 70px;
+		float: right;
+		padding: 10px;
+	}
+	ul {
+		clear: both;
+		padding: 0;
+		margin: 0;
+		li {
+			list-style: none;
+			width: 100%;
+			a {
+				padding: 10px;
+				display: block;
+				border-top: 1px solid $text;
+				font-weight: 700;
+				font-size: 0.8em;
+				text-transform: uppercase;
+			}
+			&:hover {
+				a {
+					color: $hover;
+				}
+			}
+			&.active {
+				a {
+					color: $hover;
+				}
+			}
+		}
+	}
+}
+
+#nav-icon4 {
+	width: 30px;
+	height: 20px;
+	position: relative;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	cursor: pointer;
+	float: right;
+	span {
+		display: block;
+		position: absolute;
+		height: 2px;
+		width: 100%;
+		background: $text;
+		opacity: 1;
+		left: 0;
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+		-webkit-transition: .5s ease-in-out;
+		-moz-transition: .5s ease-in-out;
+		-o-transition: .5s ease-in-out;
+		transition: .5s ease-in-out;
+		-webkit-transform-origin: left center;
+		-moz-transform-origin: left center;
+		-o-transform-origin: left center;
+		transform-origin: left center;
+		&:nth-child(1) {
+		  top: 0px;
+		}
+		&:nth-child(2) {
+		  top:9px;
+		}
+		&:nth-child(3) {
+		  bottom: 0;
+		}
+	}
+}
+
+
+
+/* Icon 4 */
+
+
+#nav-icon4.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 0;
+  left: 0;
+}
+
+#nav-icon4.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#nav-icon4.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  bottom: -3px;
+  left: 0;
+}
+
+@media screen and (min-width: $tablet-layout) {
+
+
+	.logo {
+		a {
+			img {
+			}
+		}
+	}
+
+	.nav {
+		float: right;
+		.nav_button {
+			display: none;
+		}
+		ul {
+			clear: inherit;
+			li {
+				width: inherit;
+				display: inline-block;
+				a {
+					border-top: none;
+				}
+			}
+		}
+	}
+
+}

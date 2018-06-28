@@ -1,0 +1,272 @@
+
+.facts {
+	.fact {
+		padding: 40px 0 0;
+		border-top: 1px solid $text;
+		clear: both;
+		img {
+			margin: 0 auto;
+		}
+		p {
+			text-align: right;
+			font-size: 0.7em;
+			color: $hover;
+			max-width: inherit;
+			clear: both;
+		}
+		hr {
+			height: 2px;
+			border: 0 none;
+		}
+	}
+	.purple {
+		hr {
+			background-color:$purple;
+			color:$purple;
+		}
+		h6 {
+			color: $purple;
+		}
+		span {
+			color: $purple;
+		}
+	}
+	.green {
+		hr {
+			background-color:$green;
+			color:$green;
+		}
+		h6 {
+			color: $green;
+		}
+		span {
+			color: $green;
+		}
+	}
+	.blue {
+		hr {
+			background-color:$blue;
+			color:$blue;
+		}
+		h6 {
+			color: $blue;
+		}
+		span {
+			color: $blue;
+		}
+	}
+	.orange {
+		hr {
+			background-color:$orange;
+			color:$orange;
+		}
+		h6 {
+			color: $orange;
+		}
+		span {
+			color: $orange;
+		}
+	}
+	p {
+	    margin: 2em 0 5px;
+	}
+}
+
+#fact_miami, #fact_selfie, #fact_japan {
+	svg {
+		max-width: 90%;
+	}
+}
+
+#fact_miami {
+	.miami_ani {
+		position: relative;
+		margin-top: 25px;
+		#miami_full {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			display: block;
+		}
+		#miami_full.display  {
+			display: none;
+		}
+	}
+}
+
+
+
+#fact_japan {
+	svg {
+		margin-top: 25px;
+		max-width: 90%;
+		circle {
+			opacity: 1;
+		}
+		.a{
+			fill:$header;
+		}
+		.b{
+			fill:none;
+			stroke:#00CF6F;
+		}
+		.c{
+			fill:#80E7B7;
+			stroke:#00CF6F;
+		}
+	}
+}
+
+
+
+#earth {
+	position: relative;
+    margin: 25px 0 0 -30%;
+	canvas {
+		width: 150px;
+	}
+	div {
+		color: $blue;
+	    line-height: 150px;
+	    font-size: 1.6em; 
+
+	    position: absolute;
+	    top: 0;
+    right: 0;
+	}
+}
+
+
+#fact_thumb {
+	svg {
+		overflow: visible;
+		margin: 25px 0 20px;
+    	width: 200px;
+		.a{
+			fill:none;
+			stroke:#FBA011;
+		}
+		.b{
+			fill:#FDD088;
+			stroke:#FBA011;
+		}
+	}
+}
+
+#fact_selfie {
+	canvas {
+		width: 300px;
+	}
+	opacity: 1;
+}
+
+
+
+#fact_print {
+	svg {
+		overflow: visible;
+		max-width: 400px;
+		margin-top: 25px;
+		g {
+			opacity: 1;
+		}
+		.a{
+			fill:#DFA5DD;
+			stroke:#C04CBB;
+			opacity: 1;
+		}
+		.b{
+			fill:none;
+			stroke:#C04CBB;
+		}
+	}
+}
+
+
+
+
+@keyframes dash {
+	 to {
+	    stroke-dashoffset: -120;
+	}
+}
+  
+
+#tsle {
+	div {
+		position: relative;
+		margin-top: 25px;
+		img {
+			&:nth-child(2) {
+				position: absolute;
+				left: 0;
+				right: 0;
+			}
+			&.tsle_le {
+				transform: scale(1, 1);
+			}
+		}
+	}
+}
+
+
+
+
+#fact_fill {
+	svg {
+		max-width: 90%;
+		margin-top: 25px;
+		rect, line {
+			opacity: 1;
+		}
+        .a {
+            fill: #FCCF87;
+        }
+        .b {
+            fill: none;
+            stroke: #FFF;
+        }
+	}
+}
+
+
+
+@media screen and (min-width: $tablet-layout) {
+
+#fact_miami, #fact_japan  {
+	svg {
+		max-width: 50%;
+	}
+}
+
+#fact_selfie {
+	canvas {
+		width: inherit;
+	}
+}
+
+#earth {
+	
+	canvas {
+		width: 300px;
+		margin: 0 auto;
+	}
+	div {
+	    margin-right: 24%;
+	    line-height: 300px;
+    font-size: 2em;
+	    span {
+	    }
+	}
+}
+
+#fact_fill {
+	svg {
+		max-width: none;
+    	width: 700px;
+	}
+}
+
+
+}

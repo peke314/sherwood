@@ -1,0 +1,46 @@
+/* ==|====================
+   Layout/Footer
+   ======================= */
+footer {
+	.footer_container {
+		padding: 70px 10px;
+		hr {
+			margin: 20px auto;
+
+		}
+		h2 {
+			font-weight: 300;
+			margin: 0 auto;
+			max-width: 100%;
+			font-size: 1em;
+			color: $green;
+			&:first-child {
+				color: $text;
+				font-size: 1.9em;
+			}
+			a {
+				&:hover {
+					color: #80e6b6;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $tablet-layout) {
+
+	footer {
+		.footer_container {
+			hr {
+
+			}
+			h2 {
+				font-size: 3em;
+				&:first-child {
+					font-size: 3em;
+				}
+			}
+		}
+	}
+
+}
