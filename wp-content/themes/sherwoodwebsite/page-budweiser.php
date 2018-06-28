@@ -78,6 +78,63 @@
       </video>
       <video preload="auto" controls autoplay loop muted playsinline class="bgvid"  id="bgvid-sm">
       </video>
+      <div id="muteVideo">
+        <style media="screen">
+          #muteVideo {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 4vh;
+          }
+          #muteVideo > div {
+            cursor: pointer;
+            background-color: white;
+            border-radius: 50%;
+            width: 30px;
+            padding: 0.5em;
+          }
+          #icon--unmuted {
+            display: none;
+          }
+        </style>
+        <div onclick="toggleMute();">
+          <img id="icon--muted" src="<?php bloginfo('template_directory');?>/png/muted.png" alt="">
+          <img id="icon--unmuted" src="<?php bloginfo('template_directory');?>/png/unmuted.png" alt="">
+        </div>
+        <script type="text/javascript">
+        var mq = window.matchMedia( "(min-width: 1025px)" );
+        if (mq.matches) {
+          // window width is at least 500px
+          function toggleMute() {
+            var video=document.getElementById("bgvid")
+            if(video.muted){
+            video.muted = false;
+            document.getElementById("icon--muted").style.display = "none";
+            document.getElementById("icon--unmuted").style.display = "block";
+            } else {
+            video.muted = true;
+            document.getElementById("icon--muted").style.display = "block";
+            document.getElementById("icon--unmuted").style.display = "none";
+            }
+          }
+        } else {
+          // window width is less than 500px
+          function toggleMute() {
+            var video2=document.getElementById("bgvid-sm")
+            if(video.muted){
+            video2.muted = false;
+            document.getElementById("icon--muted").style.display = "none";
+            document.getElementById("icon--unmuted").style.display = "block";
+            } else {
+            video2.muted = true;
+            document.getElementById("icon--muted").style.display = "block";
+            document.getElementById("icon--unmuted").style.display = "none";
+            }
+          }
+        }
+
+        </script>
+      </div>
     </section>
 
     <section id="about" class="about">
