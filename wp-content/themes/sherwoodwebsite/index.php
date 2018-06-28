@@ -79,10 +79,26 @@ if ( !defined( 'ABSPATH' ) ) {
       <a href="#about">
         <div class="arrow bounce" style="background-image: url('<?php bloginfo('template_directory');?>/png/arrow.png')"></div>
       </a>
-      <video preload="auto" autoplay loop  class="bgvid" id="bgvid">
+      <video preload="auto" autoplay loop muted playsinline class="bgvid" id="bgvid">
       </video>
       <video preload="auto" controls autoplay loop muted playsinline class="bgvid"  id="bgvid-sm">
       </video>
+      <div id="muteVideo">
+
+        <button onclick="toggleMute();">
+          unmute
+        </button>
+        <script type="text/javascript">
+        function toggleMute() {
+          var video=document.getElementById("bgvid")
+          if(video.muted){
+          video.muted = false;
+          } else {
+          video.muted = true;
+          }
+        }
+        </script>
+      </div>
     </section>
 
     <section id="about" class="about">
