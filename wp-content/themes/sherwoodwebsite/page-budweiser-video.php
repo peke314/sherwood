@@ -801,6 +801,7 @@ function map1path(){this.points=[[[-1246.9,444],[-317.6,444],[611.7,444],[1569.2
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-75840168-1', 'auto');
+    ga('set', 'anonymizeIp', true);
     ga('send', 'pageview');
 
   </script>
