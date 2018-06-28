@@ -74,7 +74,7 @@
       <a href="#about">
         <div class="arrow bounce" style="background-image: url('<?php bloginfo('template_directory');?>/png/arrow.png')"></div>
       </a>
-      <video preload="auto" autoplay loop  class="bgvid" id="bgvid-bud">
+      <video preload="auto" autoplay loop muted playsinline class="bgvid" id="bgvid-bud">
       </video>
       <video preload="auto" controls autoplay loop muted playsinline class="bgvid"  id="bgvid-bud-sm">
       </video>
